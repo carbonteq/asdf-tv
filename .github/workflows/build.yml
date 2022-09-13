@@ -35,6 +35,6 @@ jobs:
         uses: asdf-vm/actions/plugin-test@v1
         env:
           GITHUB_API_TOKEN: ${{ github.token }}
-          RUST_BACKTRACE: 1
+          RUST_BACKTRACE: full
         with:
           command: "tidy-viewer --version"
