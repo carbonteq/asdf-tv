@@ -37,4 +37,4 @@ jobs:
           GITHUB_API_TOKEN: ${{ github.token }}
           RUST_BACKTRACE: full
         with:
-          command: "tidy-viewer --version"
+          command: "tv --version"
