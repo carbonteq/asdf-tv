@@ -2,7 +2,7 @@
 
 # asdf-tv [![Build](https://github.com/carbonteq/asdf-tv/actions/workflows/build.yml/badge.svg)](https://github.com/carbonteq/asdf-tv/actions/workflows/build.yml) [![Lint](https://github.com/carbonteq/asdf-tv/actions/workflows/lint.yml/badge.svg)](https://github.com/carbonteq/asdf-tv/actions/workflows/lint.yml)
 
-[tv (tidy-viewer)](https://github.com/alexhallam/tidy-viewer) plugin for the [asdf version manager](https://asdf-vm.com).
+[tv (tidy-viewer)](https://github.com/alexhallam/tv) plugin for the [asdf version manager](https://asdf-vm.com).
 
 </div>
 
@@ -22,27 +22,27 @@
 Plugin:
 
 ```shell
-asdf plugin add tidy-viewer
+asdf plugin add tv
 
 # or
 
-asdf plugin add tidy-viewer https://github.com/carbonteq/asdf-tv.git
+asdf plugin add tv https://github.com/carbonteq/asdf-tv.git
 ```
 
 tidy-viewer:
 
 ```shell
 # Show all installable versions
-asdf list-all tidy-viewer
+asdf list-all tv
 
 # Install specific version
-asdf install tidy-viewer latest
+asdf install tv latest
 
 # Set a version globally (on your ~/.tool-versions file)
-asdf global tidy-viewer latest
+asdf global tv latest
 
 # Now tidy-viewer commands are available
-tidy-viewer --version
+tv --version
 ```
 
 Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to

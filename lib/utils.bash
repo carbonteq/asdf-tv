@@ -124,9 +124,13 @@ install_version() {
     mkdir -p "$install_path"
     # cp -r "$ASDF_DOWNLOAD_PATH"/* "$install_path"
     download_release "$version" "$release_file"
+    echo "Downloaded" >&2
     tar -xzf "$release_file" || fail Could not extract "$release_file"
+    echo "Extracted" >&2
     mv "$base_name/tidy-viewer" "$install_path"
+    echo "Moved" >&2
     rm -r "$release_file" "$base_name"
+    echo "Removed build files" >&2
 
     local tool_cmd
     tool_cmd="$(echo "$TOOL_TEST" | cut -d' ' -f1)"
